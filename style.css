@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +7,7 @@
 /* Layout */
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Smythe', sans-serif;
     min-height: 100vh;
     margin: 0 auto;
 }
@@ -14,10 +16,10 @@ body {
 .feed-container {
     position: absolute;
     top: 10%;
-    left: 33%;
+    left: 25%;
     margin: 0 auto;
-    width: 400px;
-    height: 800px;
+    width: 600px;
+    height: 900px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: whitesmoke;
@@ -25,7 +27,30 @@ body {
 
 /* Header */
 
+header{
+    position: relative;
+}
+
 .header-image {
     width: 100%;
     border-radius: 8px 8px 0 0;
+}
+
+h2, 
+h4 {
+    position: absolute;
+    color: white;
+    left: 46px;
+}
+
+h2 {
+top: 56px;
+line-height: 24px;
+font-size: 39px;
+}
+
+h4 {
+    top: 96px;
+    line-height: 13px;
+    font-size: 22px;
 }
