@@ -14,9 +14,9 @@ body {
 .feed-container {
     position: absolute;
     top: 10%;
-    left: 25%;
+    left: 33%;
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
     height: 800px;
     border: 2px solid black;
     border-radius: 10px;
