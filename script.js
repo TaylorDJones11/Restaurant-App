@@ -12,7 +12,7 @@ function getMenuHtml(){
 
                     <div class="menu-text">
                         <h3>${item.name}</h3>
-                        <h6>${item.ingredients}</h6>
+                        <h6 class="ingredient-text">${item.ingredients}</h6>
                         <h5>$${item.price}</h5>
                     </div>
                     
