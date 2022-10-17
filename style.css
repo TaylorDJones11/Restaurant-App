@@ -19,7 +19,7 @@ body {
     left: 21%;
     margin: 0 auto;
     width: 600px;
-    height: 900px;
+    height: 1160px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: whitesmoke;
@@ -59,10 +59,11 @@ h4 {
 
 .menu-items {
     display: flex;
-    margin: 67px 0 0 46px;
+    margin: 67px 0 45px 46px;
     border-bottom: 1px solid #8b8b8b ;
     width: 500px;
     height: 140px;
+    
 }
 
 .menu-text {
@@ -80,6 +81,7 @@ h6 {
     font-size: 16px;
     padding: 8px 0 8px 0;
     line-height: 24px;
+    letter-spacing: .5px;
 }
 
 h5 {
@@ -94,4 +96,24 @@ button {
     border-radius: 70%;
     border: 1px solid #8b8b8b;
     background-color: whitesmoke;
+}
+
+/* Complete Order Menu */
+
+.order {
+    width: 508px;
+    height: 319px;
+    margin: 67px 0 0 46px;
+}
+
+.order-text {
+    text-align: center;
+    margin-bottom: 62px;
+}
+
+.remove-item {
+    font-family: 'Verdana';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
 }
