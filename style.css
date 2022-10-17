@@ -90,6 +90,8 @@ h5 {
 button {
     height: 50px;
     width: 50px;
+    margin-left: auto;
     border-radius: 70%;
     border: 1px solid #8b8b8b;
+    background-color: whitesmoke;
 }
