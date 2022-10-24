@@ -3,17 +3,17 @@ export const menuArray = [
         name: "Taco",
         ingredients: ["chicken", " tomatoes", " black beans"],
         id: 0,
-        price: 14,
+        price: 7,
         emoji: "🍕",
-        image: 'images/pizza.png'
+        image: 'images/newtaco.png'
     },
     {
         name: "Nachos",
         ingredients: ["beef", " cheese", " lettuce"],
-        price: 12, 
+        price: 9, 
         emoji: "🍔",
         id: 1,
-        image: 'images/hamburger.png'
+        image: 'images/nachos.png'
     },
         {
         name: "Margarita",
@@ -21,6 +21,6 @@ export const menuArray = [
         price: 12,
         emoji: "🍺",
         id: 2,
-        image: 'images/beer.png'
+        image: 'images/margarita.png'
     }
 ]
