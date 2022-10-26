@@ -19,7 +19,7 @@ body {
     left: 21%;
     margin: 0 auto;
     width: 600px;
-    height: 1250px;
+    height: 1320px;
     border: 2px solid black;
     border-radius: 10px;
     background-color: #192446;
@@ -60,7 +60,7 @@ h4 {
 
 .menu-items {
     display: flex;
-    margin: 67px 0 45px 46px;
+    margin: 60px 0 45px 46px;
     border-bottom: 1px solid #8b8b8b ;
     width: 500px;
     height: 140px;
@@ -103,7 +103,7 @@ h5 {
 
 /* Complete Order Menu */
 
-.order {
+.your-order {
     width: 508px;
     height: 319px;
     margin: 67px 0 0 46px;
@@ -156,5 +156,5 @@ h5 {
 
 /* Utility */
 .hidden {
-    display: none;
+    /* display: none; */
 }
