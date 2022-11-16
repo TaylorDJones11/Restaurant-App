@@ -1,23 +1,20 @@
 import { menuArray } from "./data.js";
+let orderArray = [];
+let isCompleted = false;
 
 
 // Click each menu item
 document.addEventListener('click', function(e){
     if(e.target.dataset.add){
-        console.log(e.target.dataset.add)
+        OrderProduct(e.target.dataset.add)
+        isCompleted = true; 
        getOrdertHtml(e.target.dataset.add)
-       addMenuItem(e.target.dataset.add)
+    //    addMenuItem(e.target.dataset.add)
     }
 })
 
-let orderItem = document.getElementById('order')
+// let orderItem = document.getElementById('order')
 
-
-function addMenuItem(){
-    orderItem.addEventListener("click", )
-    orderItem.removeEventListener('click', addMenuItem)
-    
-}
 
 
 
@@ -82,6 +79,10 @@ function getMenuHtml(){
     `
     })
     return menuHtml
+}
+
+function OrderProduct(id){
+ orderArray.push(menuArray.filter(obj => obj.id == id)[0])
 }
 
 
