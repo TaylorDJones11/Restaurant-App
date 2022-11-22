@@ -55,6 +55,30 @@ function addItem(id){
 
 // Remove Item to Cart
 
+function removeItem(id) {
+    const targetItemObj = cart.filter((item) => {
+        return item.id == id;
+    })[0];
+
+    cart.forEach((item, idx) => {
+        if(item.id === targetItemObj.id){
+            item.quantity--;
+        }
+
+        if(item.quantity === 0){
+            cart.splice(idx, 1)
+        }
+    });
+
+    if(cart.length === 0 ){
+        cartEl.classList.remove("show");
+    }
+
+    totalPrice -= targetItemObj.price;
+
+    renderCart()
+}
+
 
 // Rendering Easy Taco Menu
 
