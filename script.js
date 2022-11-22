@@ -145,7 +145,23 @@ function openModal() {
 
 
 
+function handlePayForm (){
+    const cardNum = document.getElementById("card-number").value;
+    const cardCvv = document.getElementById("card-cvv").value;
 
+
+    if(name.value != "" && cardNum != "" && cardCvv != ""){
+        thanksMsg();
+        checkoutModalEl.style.display = "none";
+    }
+
+    cart.forEach((item) => {
+        item.quantity = 0;
+    });
+
+    cart = [];
+    totalPrice = 0;
+}
 
 
 
