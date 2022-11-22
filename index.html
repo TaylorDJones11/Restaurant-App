@@ -24,26 +24,29 @@
             </section>
 
 
-            <section>
-                <!-- Check out menu -->
-                <!-- <div class="hidden your-order" id="order">
-                    <h3 class="order-text">Your order</h3>
-                    <div class="order-list">
-                        <h3 class="order-item">Nachos</h3>
-                        <h6 class="remove-item" id="remove-item">remove</h6>
-                        <h5 class="order-price">$9</h5>
-                    </div>
-                    <div class="total-price" id="total-price">
-                        <h3 class="price-text">Total price:</h3>
-                        <h5 class="total-price-text" id="total-price-text">$26</h5>
-                    </div>
-                    <button class="complete-btn" id="complete-btn">Complete Order</button>
-                    
-                </div> -->
-                
-
+            <section class="checkout-section hidden" id="cart">
+             <!-- Checkout Section -->
             </section>
         </main>
+
+        <!-- Payment Form -->
+        <div id="checkout-modal">
+            <div id="close-modal">
+                <button id="close-modal-btn">X</button>
+            </div>
+            <form action="">
+                <h3>Enter card details</h3>
+                <input type="text" id="name" placeholder="Enter your name" required />
+                <input 
+                    type="number"
+                    id="card-number"
+                    placeholder="Enter card number"
+                    required
+                />
+                <input type="number" id="card-cvv" placeholder="Enter CVV" required>
+                <input type="submit" id="pay-btn" value="pay" required>
+            </form>
+        </div>
 
 
     </div>
