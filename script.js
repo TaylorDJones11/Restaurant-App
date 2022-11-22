@@ -163,8 +163,14 @@ function handlePayForm (){
     totalPrice = 0;
 }
 
-
-
+function thanksMsg() {
+    let cartHtml = `
+    <div class="thanks-msg">
+    <h1>Thanks ${name.value}, for your order!</h1>
+    </div>
+    `
+    document.getElementById("cart").innerHTML = cartHtml;
+}
 
 
 
