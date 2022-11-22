@@ -1,21 +1,59 @@
 import { menuArray } from "./data.js";
 
 
-let orderArray = [];
+const cartEl = document.getElementById("cart");
+const checkoutModalEl = document.getElementById("checkout-modal");
+const name = document.getElementById("name");
+
+let cart = [];
+let totalPrice = 0; 
 let isCompleted = false;
 
 
 // Click each menu item
-document.addEventListener('click', function(e){
-    if(e.target.dataset.add){
-        OrderProduct(e.target.dataset.add)
-        isCompleted = true; 
-       getOrdertHtml(e.target.dataset.add)
-    //    addMenuItem(e.target.dataset.add)
-    }
-})
+document.addEventListener('click', (e) => {
+    let targetDataset = e.target.dataset;
+    let target = e.target;
 
-// let orderItem = document.getElementById('order')
+    if(targetDataset.add){
+        addItem(targetDataset.add);
+    } else if (targetDataset.remove){
+        removeItem(targetDataset.remove);
+    } else if (target.id === "complete-order-btn"){
+        openModal();
+    } else if (target.id === "close-modal-btn") {
+        document.getElementById("checkout-modal").style.display = "none";
+    } else if (target.id === "pay-btn"){
+        e.preventDefault();
+        handlePayForm();
+    }
+});
+
+// Add Item to Cart
+function addItem(id){
+    const targetItemObj = menuArray.filter((item) => {
+        return item.id == id;
+    })[0];
+
+    if(!cart.includes(targetItemObj)) {
+        cart.push(targetItemObj);
+    }
+
+    cart.forEach((item) => {
+        if(item.id === targetItemObj.id) {
+            item.quantity++;
+        }
+    });
+
+
+    totalPrice += targetItemObj.price;
+
+    cartEl.classList.add("show")
+
+    renderCart();
+}
+
+// Remove Item to Cart
 
 
 
@@ -91,7 +129,10 @@ function OrderProduct(id){
 
 function render(){
     document.getElementById('menu-list').innerHTML = getMenuHtml()
-    
+}
+
+function renderCart() {
+    cartEl.innerHTML = renderOrderItem()
 }
 
 render()
