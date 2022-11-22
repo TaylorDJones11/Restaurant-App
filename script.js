@@ -56,41 +56,8 @@ function addItem(id){
 // Remove Item to Cart
 
 
+// Rendering Easy Taco Menu
 
-
-
-// updates the order with pricing 
-function getOrdertHtml(){
-
-    let orderHtml = ''
-    
-    menuArray.forEach(function(food){
-        orderHtml += `
-       
-        <div class="hidden your-order" id="order">
-        <h3 class="order-text">Your order</h3>
-        <div class="order-list">
-            <h3 class="order-item">${food.name}s</h3>
-            <h6 class="remove-item" id="remove-item">remove</h6>
-            <h5 class="order-price">${food.price}</h5>
-        </div>
-        <div class="total-price" id="total-price">
-            <h3 class="price-text">Total price:</h3>
-            <h5 class="total-price-text" id="total-price-text">$26</h5>
-        </div>
-        <button class="complete-btn" id="complete-btn">Complete Order</button>
-        
-    </div>
-        
-       
-    `
-    })
-
-    return orderHtml
-    
-}
-
-// shows the items available on the menu 
 function getMenuHtml(){
     let menuHtml = ``
 
@@ -121,9 +88,67 @@ function getMenuHtml(){
     return menuHtml
 }
 
-function OrderProduct(id){
- orderArray.push(menuArray.filter(obj => obj.id == id)[0])
+
+
+// Rendering Cart 
+
+function renderOrderItem() {
+    let getCartHtml = ` `;
+
+    cart.forEach((item) => {
+        getCartHtml += `
+        <div class="item-list" id="item-list">  
+                <div class="item-info">
+                  <h3>${item.name}</h3>
+                  <h4 id="item-qty">x${item.quantity}</h4>
+                  <button id="remove-item-btn" data-remove="${
+                    item.id
+                  }">remove</button>
+                </div>
+            <div class="item-price">
+                <h4>$${item.price * item.quantity}</h4>
+            </div>
+        </div>
+        `
+    });
+
+    let cartSectionHtml = ``;
+    cart.forEach(() => {
+        `
+        <div id="items-ordered">
+        <h3 class="order-text">Your order</h3>
+        <div class="order-list">
+            <h3 class="order-item">${getCartHtml}</h3>
+            <h6 class="remove-item" id="remove-item">remove</h6>
+            <h5 class="order-price"></h5>
+        </div>
+        <div class="total-price" id="total-price">
+            <h3 class="price-text">Total price:</h3>
+            <h5 class="total-price-text" id="total-price-text">$ ${totalPrice}</h5>
+        </div>
+        <button class="complete-btn" id="complete-btn">Complete Order</button>
+        
+    </div>
+        
+        `
+        
+    });
+
+    return cartSectionHtml
+
 }
+
+
+function openModal() {
+    checkoutModalEl.style.display = "block";
+}
+
+
+
+
+
+
+
 
 
 
