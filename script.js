@@ -1,4 +1,6 @@
 import { menuArray } from "./data.js";
+
+
 let orderArray = [];
 let isCompleted = false;
 
