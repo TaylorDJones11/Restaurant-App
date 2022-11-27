@@ -99,7 +99,7 @@ function getMenuHtml(){
                     </div>
                     
                     <div>
-                    <button class="menu-btn" id="menu-btn" data-add="${item.id}">+</button>
+                    <button class="item-add-btn" data-add="${item.id}">+</button>
                     </div>
                     
                 </div>

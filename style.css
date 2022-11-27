@@ -92,13 +92,14 @@ h5 {
     color: #ffffff;
 }
 
-.menu-btn {
+.item-add-btn {
     height: 50px;
     width: 50px;
-    margin-left: auto;
+    
     border-radius: 70%;
     border: 1px solid #8b8b8b;
     background-color: whitesmoke;
+    cursor: pointer;
 }
 
 /* Complete Order Menu */
