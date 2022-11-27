@@ -7,7 +7,7 @@ const name = document.getElementById("name");
 
 let cart = [];
 let totalPrice = 0; 
-let isCompleted = false;
+
 
 
 // Click each menu item
@@ -86,8 +86,6 @@ function getMenuHtml(){
     let menuHtml = ``
 
     menuArray.forEach(function(item){
-
-
         menuHtml += `
                 <div class="menu-items">
                     <div class="menu-img">
@@ -100,9 +98,10 @@ function getMenuHtml(){
                         <h5>$${item.price}</h5>
                     </div>
                     
-                    <button class="menu-btn" id="menu-btn" data-add="${item.id}">
-                        <i class="fa-regular fa-plus fa-xl"></i>
-                    </button>
+                    <div>
+                    <button class="menu-btn" id="menu-btn" data-add="${item.id}">+</button>
+                    </div>
+                    
                 </div>
                 <div class="hidden" id="order-${item.id}">
                     
