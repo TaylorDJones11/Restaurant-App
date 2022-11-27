@@ -17,6 +17,7 @@ document.addEventListener('click', (e) => {
 
     if(targetDataset.add){
         addItem(targetDataset.add);
+        console.log("Clicked")
     } else if (targetDataset.remove){
         removeItem(targetDataset.remove);
     } else if (target.id === "complete-order-btn"){
@@ -89,7 +90,7 @@ function getMenuHtml(){
         menuHtml += `
                 <div class="menu-items">
                     <div class="menu-img">
-                        <img class="menu-icons" src="${item.image}" alt="pizza icon">
+                        <img class="menu-icons" src="${item.image}" alt="food icon">
                     </div>
 
                     <div class="menu-text">
@@ -98,7 +99,7 @@ function getMenuHtml(){
                         <h5>$${item.price}</h5>
                     </div>
                     
-                    <div>
+                    <div class="add-btn">
                     <button class="item-add-btn" data-add="${item.id}">+</button>
                     </div>
                     

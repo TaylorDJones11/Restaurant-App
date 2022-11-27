@@ -9,7 +9,7 @@ export const menuArray = [
     },
     {
         name: "Nachos",
-        ingredients: ["beef", " cheese", " lettuce"],
+        ingredients: ["beef", " cheese", " lettuce", "sour cream"],
         price: 9, 
         emoji: "🍔",
         id: 1,
@@ -17,7 +17,7 @@ export const menuArray = [
     },
         {
         name: "Margarita",
-        ingredients: ["tequila, triple sec, lime, salt"],
+        ingredients: ["tequila, triple sec, lime, sea salt"],
         price: 12,
         emoji: "🍺",
         id: 2,
