@@ -199,11 +199,11 @@ function thanksMsg() {
 
 
 function render(){
-    document.getElementById('menu-list').innerHTML = getMenuHtml()
+    document.getElementById('menu-list').innerHTML = getMenuHtml();
 }
 
 function renderCart() {
-    cartEl.innerHTML = renderOrderItem()
+    cartEl.innerHTML = renderOrderItem();
 }
 
 render()
