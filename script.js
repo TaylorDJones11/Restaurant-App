@@ -46,11 +46,10 @@ function addItem(id){
         }
     });
 
-
     totalPrice += targetItemObj.price;
-
+// Either show class is not properly placed
     cartEl.classList.add("show")
-
+// Or render cart is not properly written
     renderCart();
 }
 
