@@ -103,9 +103,7 @@ function getMenuHtml(){
                     </div>
                     
                 </div>
-                <div class="hidden" id="order-${item.id}">
-                    
-                </div>
+                
     `
     })
     return menuHtml
@@ -124,9 +122,7 @@ function renderOrderItem() {
                 <div class="item-info">
                   <h3>${item.name}</h3>
                   <h4 id="item-qty">x${item.quantity}</h4>
-                  <button id="remove-item-btn" data-remove="${
-                    item.id
-                  }">remove</button>
+                  <button id="remove-item-btn" data-remove="${item.id}">remove</button>
                 </div>
             <div class="item-price">
                 <h4>$${item.price * item.quantity}</h4>
