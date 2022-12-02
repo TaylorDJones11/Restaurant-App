@@ -137,8 +137,6 @@ function renderOrderItem() {
         <div id="items-ordered">
         <h3 class="order-text">Your order</h3>
         <div class="order-list">${getCartHtml}</div>
-            
-        <div class="order-price"></div>
         
         <div class="total-price" id="total-price">
             <h3 class="price-text">Total price:</h3>
@@ -146,7 +144,6 @@ function renderOrderItem() {
         </div>
         <button class="complete-btn" id="complete-btn">Complete Order</button>
         
-    </div>
         
         `
         
