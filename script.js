@@ -48,7 +48,7 @@ function addItem(id){
 
     totalPrice += targetItemObj.price;
 // Either show class is not properly placed
-    cartEl.classList.add("show")
+    cartEl.classList.add("show");
 // Or render cart is not properly written
     renderCart();
 }
@@ -136,11 +136,10 @@ function renderOrderItem() {
         `
         <div id="items-ordered">
         <h3 class="order-text">Your order</h3>
-        <div class="order-list">
-            <h3 class="order-item">${getCartHtml}</h3>
-            <h6 class="remove-item" id="remove-item">remove</h6>
-            <h5 class="order-price"></h5>
-        </div>
+        <div class="order-list">${getCartHtml}</div>
+            
+        <div class="order-price"></div>
+        
         <div class="total-price" id="total-price">
             <h3 class="price-text">Total price:</h3>
             <h5 class="total-price-text" id="total-price-text">$ ${totalPrice}</h5>
