@@ -37,7 +37,7 @@ function addItem(id){
     })[0];
 
     if(!cart.includes(targetItemObj)) {
-        cart.push(targetItemObj);
+      cart.push(targetItemObj);
     }
 
     cart.forEach((item) => {
@@ -133,6 +133,7 @@ function renderOrderItem() {
 
     let cartSectionHtml = ``;
     cart.forEach(() => {
+        cartSectionHtml =
         `
         <div id="items-ordered">
         <h3 class="order-text">Your order</h3>
