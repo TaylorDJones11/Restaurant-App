@@ -184,7 +184,7 @@ function handlePayForm (){
 function thanksMsg() {
     let cartHtml = `
     <div class="thanks-msg">
-    <h1>Thanks ${name.value}, for your order!</h1>
+    <h1>Thanks ${name.value}, your order is on its way!</h1>
     </div>
     `
     document.getElementById("cart").innerHTML = cartHtml;
