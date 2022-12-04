@@ -9,14 +9,15 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     min-height: 100vh;
-    margin: 0 auto;
+    margin: auto;
 }
 
 
 .feed-container {
     position: absolute;
-    top: 10%;
-    left: 21%;
+    top: 5%;
+    left: 10%;
+    right: 10%;
     margin: 0 auto;
     width: auto;
     height: auto;
@@ -38,13 +39,6 @@ header{
 }
 
 
-
-h2 {
-top: 56px;
-line-height: 24px;
-font-size: 39px;
-}
-
 h4 {
     top: 96px;
     line-height: 13px;
@@ -56,16 +50,16 @@ h4 {
 .menu-items {
     display: flex;
     justify-content: space-around;
-    margin: 60px 0 45px 46px;
+    margin: 60px 45px 45px 46px;
     border-bottom: 1px solid #8b8b8b ;
-    width: 500px;
+    width: auto;
     height: 140px;
     
 }
 
-/* .menu-text {
-    padding-left: 30px;
-} */
+.menu-text {
+    padding-right: 35px;
+}
 
 h3 {
     line-height: 17px;
