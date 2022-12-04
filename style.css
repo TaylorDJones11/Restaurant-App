@@ -257,3 +257,16 @@ form input {
     font-weight: 700;
 }
 
+
+.thanks-msg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 40px 35px 40px;
+    background-color:#16DB99;
+    border-radius: 10px;
+    width: auto;
+    min-height: 10vh;
+}

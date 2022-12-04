@@ -9,7 +9,7 @@ export const menuArray = [
     },
     {
         name: "Nachos",
-        ingredients: ["beef", " cheese", " lettuce", "sour cream"],
+        ingredients: ["beef", " cheese", " lettuce", " sour cream"],
         price: 9, 
         id: 1,
         image: 'images/nachos.png',

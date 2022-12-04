@@ -17,15 +17,15 @@ document.addEventListener('click', (e) => {
 
     if(targetDataset.add){
         addItem(targetDataset.add);
-        console.log("Clicked")
     } else if (targetDataset.remove){
         removeItem(targetDataset.remove);
     } else if (target.id === "complete-btn"){
         openModal();
     } else if (target.id === "close-modal-btn") {
         document.getElementById("checkout-modal").style.display = "none";
-    } else if (target.id === "pay-btn"){
+    } else if (target.id === "payment-btn"){
         e.preventDefault();
+        console.log("running");
         handlePayForm();
     }
 });
@@ -169,6 +169,7 @@ function handlePayForm (){
 
     if(name.value != "" && cardNum != "" && cardCvv != ""){
         thanksMsg();
+        console.log('running')
         checkoutModalEl.style.display = "none";
     }
 
