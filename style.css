@@ -37,12 +37,7 @@ header{
     border-radius: 8px 8px 0 0;
 }
 
-h2, 
-h4 {
-    position: absolute;
-    color: white;
-    left: 46px;
-}
+
 
 h2 {
 top: 56px;
@@ -121,18 +116,20 @@ h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .item-info {
     display: flex;
 }
 .item-list h3, h4 {
-    margin: 7px;;
+    margin: 7px;
+    color: #ffffff;
 }
 
 .order-list {
     display: flex;
-    margin: 40px 25px;
+    margin: 40px 35px;
     flex-direction: column;
     margin-bottom: 22px;
 }
@@ -147,14 +144,26 @@ h5 {
     padding-left: 10px;
 }
 
+#remove-item-btn {
+    border: none;
+    font-family: 'Verdana';
+    color: #ffffff;
+    background-color: #d454b0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
 /* Total Price */
 
 .total-price {
     display: flex;
     justify-content: space-between;
-    margin: 40px 25px;
+    margin: 40px 35px;
     padding-top: 30px;
     border-top: 2px solid black;
+    
 }
 
 .complete-btn-div {
@@ -171,7 +180,7 @@ text-align: center;
     margin-top: 25px;
     margin-bottom: 50px;
     color: #ffffff;
-    font: 'Verdana';
+    font-family: 'Verdana';
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;

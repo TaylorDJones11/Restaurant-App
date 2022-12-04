@@ -120,9 +120,10 @@ function renderOrderItem() {
         getCartHtml += `
         <div class="item-list" id="item-list">  
                 <div class="item-info">
+                  <h4 id="item-qty">${item.quantity}x -</h4>
                   <h3>${item.name}</h3>
-                  <h4 id="item-qty">${item.quantity}</h4>
-                  <button id="remove-item-btn" data-remove="${item.id}">remove</button>
+                  <button id="remove-item-btn" data-remove="${item.id}">Remove</button>
+                  
                 </div>
             <div class="item-price">
                 <h4>$${item.price * item.quantity}</h4>
@@ -141,7 +142,7 @@ function renderOrderItem() {
         
         <div class="total-price" id="total-price">
             <h3 class="price-text">Total price:</h3>
-            <h5 class="total-price-text" id="total-price-text">$ ${totalPrice}</h5>
+            <h4 class="total-price-text" id="total-price-text">$ ${totalPrice}</h4>
         </div>
         <div class="complete-btn-div">
         <button class="complete-btn" id="complete-btn">Complete Order</button>
