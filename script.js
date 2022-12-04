@@ -20,7 +20,7 @@ document.addEventListener('click', (e) => {
         console.log("Clicked")
     } else if (targetDataset.remove){
         removeItem(targetDataset.remove);
-    } else if (target.id === "complete-order-btn"){
+    } else if (target.id === "complete-btn"){
         openModal();
     } else if (target.id === "close-modal-btn") {
         document.getElementById("checkout-modal").style.display = "none";
@@ -47,9 +47,8 @@ function addItem(id){
     });
 
     totalPrice += targetItemObj.price;
-// Either show class is not properly placed
     cartEl.classList.add("show");
-// Or render cart is not properly written
+
     renderCart();
 }
 

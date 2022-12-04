@@ -92,6 +92,8 @@ h5 {
     border: 1px solid #8b8b8b;
     background-color: whitesmoke;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 /* Complete Order Menu */
@@ -178,8 +180,13 @@ text-align: center;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
-    
+    transition-duration: 0.4s;
 }
+
+.complete-btn:hover {
+background-color: #05704c;
+}
+
 
 /* Utility */
 .hidden {
@@ -189,3 +196,52 @@ text-align: center;
 .show {
     display: block;
 }
+
+/* Checkout */
+
+#checkout-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 480px;
+    height: 380px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#close-modal {
+ text-align: right;
+ padding: 10px;
+}
+
+#close-modal button {
+ cursor: pointer;
+  border: none;
+  color: #d454b0; 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-heading {
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+form input {
+    width: 80%;
+  margin: 10px 0;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid; 
+}
+
