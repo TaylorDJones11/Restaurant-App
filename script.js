@@ -121,7 +121,7 @@ function renderOrderItem() {
         <div class="item-list" id="item-list">  
                 <div class="item-info">
                   <h3>${item.name}</h3>
-                  <h4 id="item-qty">x${item.quantity}</h4>
+                  <h4 id="item-qty">${item.quantity}</h4>
                   <button id="remove-item-btn" data-remove="${item.id}">remove</button>
                 </div>
             <div class="item-price">
@@ -143,8 +143,9 @@ function renderOrderItem() {
             <h3 class="price-text">Total price:</h3>
             <h5 class="total-price-text" id="total-price-text">$ ${totalPrice}</h5>
         </div>
+        <div class="complete-btn-div">
         <button class="complete-btn" id="complete-btn">Complete Order</button>
-        
+        </div>
         
         `
         
