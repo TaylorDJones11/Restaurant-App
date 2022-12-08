@@ -25,7 +25,6 @@ document.addEventListener('click', (e) => {
         document.getElementById("checkout-modal").style.display = "none";
     } else if (target.id === "payment-btn"){
         e.preventDefault();
-        console.log("running");
         handlePayForm();
     }
 });
@@ -165,11 +164,11 @@ function openModal() {
 function handlePayForm (){
     const cardNum = document.getElementById("card-number").value;
     const cardCvv = document.getElementById("card-cvv").value;
-
+    // let cardNumRegEx = (/^[0-9]+$/)
+    // let cardCvvRegEx = match(/(\d{3})/g)
 
     if(name.value != "" && cardNum != "" && cardCvv != ""){
         thanksMsg();
-        console.log('running')
         checkoutModalEl.style.display = "none";
     }
 
